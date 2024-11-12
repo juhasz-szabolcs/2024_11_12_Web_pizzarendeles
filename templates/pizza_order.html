@@ -8,6 +8,23 @@
 <body>
     <h1>Pizza rendelési űrlap</h1>
 
+    <form method="post">
+        <fieldset>
+            <legend>Vevő adatai</legend>
+            Név<input type="text" name ="name" required><br>
+            Telefon<input type="tel" name="phone" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pizza mérete</legend>
+            <input type="radio" name ="size" value="kicsi" required> Kicsi<br>
+            <input type="radio" name="size" value="nagy"> Nagy
+        </fieldset>
+
+        <button type="reset">Visszaállítás</button>
+        <button type="submit">Elküldés</button>
+    </form>
+
     <a href="/">Vissza a főoldalra</a>
 </body>
 </html>
